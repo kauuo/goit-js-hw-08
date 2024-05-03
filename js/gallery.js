@@ -102,7 +102,7 @@ function handleClick(event) {
   if (event.target === event.currentTarget) {
     return;
   }
-  
+
   event.preventDefault();
   console.log(event.target.src);
 
