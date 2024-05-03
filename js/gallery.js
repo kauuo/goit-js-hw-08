@@ -99,6 +99,10 @@ gallery.style.marginTop = "24px";
 gallery.style.marginBottom = "24px";
 
 function handleClick(event) {
+  if (event.target === event.currentTarget) {
+    return;
+  }
+  
   event.preventDefault();
   console.log(event.target.src);
 
